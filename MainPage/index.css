@@ -14,7 +14,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(0, 0, 0, 20%);
+    background-color: rgb(0, 0, 0, 50%);
 }
 
 /* TODO: fazer forma diferenciada e adicionar background */
@@ -22,24 +22,10 @@ header{
     height: 40vh;
     width: 100vw;
 }
-#cabecalho div{
-    display: flex;
-    height: 100%;
-    align-items: flex-end;
-    background-color: azure;
+svg path{
+    filter: drop-shadow(0px 10px 20px #000) 
+        opacity(50%);
 }
-#cabecalho div div{
-    height: 100px;
-    width: 50vw;
-}
-#cabecalho div > div:nth-child(1) {
-    border-radius: 50px 100px 0px 0px;
-    background-color: aqua;
-}
-#cabecalho div > div:nth-child(2) {
-    background-color: rgb(8, 58, 58);
-}
-
 #signinup-buttons{
     display: flex;
     flex-direction: column;
