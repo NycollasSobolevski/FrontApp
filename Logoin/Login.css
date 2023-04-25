@@ -1,0 +1,61 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(45deg, #1d005a 0%, #8220ef 100%);
+}
+
+.backSvg{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+}
+.wave{
+    filter:
+    drop-shadow(0 10px 20px black)
+    opacity(50%);
+}
+
+.loginSession{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center ;
+    flex-direction: column;
+    align-items: center;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.inputs input{
+    height: 50px;
+    width: 75vw;
+    border-radius: 15px;
+    background-color: rgba( 0,0,0, 50%);
+    box-shadow: 0 0 15px  #d3b3f8,
+                inset 0 0 10px  #ebe1f6;
+    color: white;
+    padding-left: 15px;
+    outline: none;
+}
+.inputs input:focus{
+    box-shadow: 0 0 15px  #000000,
+                inset 0 0 10px  #000000;
+    font-size: medium;            
+    transition:all 100ms;
+    
+}
+.inputs input::placeholder{
+    color: #dec8f8;
+    padding-left: 20px;
+}
