@@ -1,60 +1,135 @@
-*{
-    margin: 0;
-    padding: 0;
-    border:0;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-body{
-    height: 100vh;
-    width: 100vw ;
-    background: linear-gradient(-45deg, #1d005a 0%, #8220ef 100%);
-}
-header{
-    height: 75px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgb(0, 0, 0, 50%);
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(-45deg, #1d005a 0%, #8220ef 100%);
 }
 
-/* TODO: fazer forma diferenciada e adicionar background */
-#cabecalho{
-    height: 40vh;
-    width: 100vw;
+body {
+  background: linear-gradient(253deg, #1d005a, #9d48fd);
+  /* background: linear-gradient(253deg, #0cc898, #1797d2, #864fe1); */
+  background-size: 200% 200%;
+  -webkit-animation: Background 25s ease infinite;
+  -moz-animation: Background 25s ease infinite;
+  animation: Background 10s ease infinite;
+  
 }
-svg path{
-    filter: drop-shadow(0px 10px 20px #000) 
-        opacity(50%);
+@-webkit-keyframes Background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-#signinup-buttons{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
+
+@-moz-keyframes Background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-#signinup-buttons h2{
-    color: white;
+
+@keyframes Background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-.loginButton{
-    height: 60px;
-    width: 150px;
+/* Arrumar click dos botoes */
+.full-screen{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(https://i.imgur.com/wCG2csZ.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  /* opacity: 45%; */
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  /* works with row or column */ 
+
+  /* flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center; 
+  z-index: 0; */
 }
-#signIn{
-    background-color: #c500ff;
-    border-radius: 15px 30px 15px 30px;
+header {
+  height: 75px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, 50%);
 }
-#signUp{
-    background-color: #9389bd;
-    border-radius: 30px 15px 30px 15px;
+main{
+  z-index: 2;
 }
-#logins-methods{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    align-items: center;
-    margin-top: 15px;
+#cabecalho {
+  height: 40vh;
+  width: 100vw;
 }
-.login-method-img{
-    height: 50px;
-    width: 50px;
+svg path {
+  filter: drop-shadow(0px 10px 20px #000) opacity(50%);
+}
+#signinup-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+#signinup-buttons h2 {
+  color: white;
+}
+.loginButton:hover{
+  cursor: pointer;
+}
+.loginButton {
+  height: 60px;
+  width: 150px;
+}
+#signIn {
+  background-color: #c500ff;
+  border-radius: 15px 30px 15px 30px;
+}
+#signUp {
+  background-color: #9389bd;
+  border-radius: 30px 15px 30px 15px;
+}
+#logins-methods {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  margin-top: 15px;
+}
+.login-method-img {
+  height: 50px;
+  width: 50px;
 }
