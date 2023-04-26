@@ -5,7 +5,9 @@
 }
 
 body{
-    background: linear-gradient(45deg, #1d005a 0%, #8220ef 100%);
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(-45deg, #1d005a 0%, #8220ef 100%);
 }
 
 .backSvg{
@@ -29,98 +31,8 @@ body{
     justify-content: center ;
     flex-direction: column;
     align-items: center;
-}
-/* .inputs{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
     top: 200px;
-} */
-
-
-
-.loginSession{
-    position: relative;
-    top: 350px;
 }
-
-input[type="email"]{
-    display: inline-block;
-    width: 75vw;
-    height: 40px;
-    box-sizing: border-box;
-    outline: none;
-    border: 1px solid lightgray;
-    border-radius: 3px;
-    padding: 10px 10px 10px 100px;
-    transition: all 0.1s ease-out;
-  } 
-input[type="email"] + label{
-    position: absolute;
-    top: 0;
-    left: 50px;
-    bottom: 0;
-    height: 40px;
-    line-height: 40px;
-    color: #1d005a;
-    border-radius: 3px 0 0 3px;
-    padding: 0 20px;
-    transform: translateZ(0) translateX(0);
-    transition: all 0.3s ease-in;
-    transition-delay: 0.2s;
-}
-input[type="email"]:focus + label{
-    transform: translateY(-100%)     translateX(0%);
-    border-radius: 3px;
-    color: aliceblue;
-    transition: all 0.1s ease-out;
-}
-input[type="email"]:focus{
-    padding: 10px;
-    transition: all 0.3s ease-out;
-    transition-delay: 0.2s;
-}
-/* --------------------------------------------------------- */
-input[type="password"]{
-    display: inline-block;
-    width: 75vw;
-    height: 40px;
-    box-sizing: border-box;
-    outline: none;
-    border: 1px solid lightgray;
-    border-radius: 3px;
-    padding: 10px 10px 10px 100px;
-    transition: all 0.1s ease-out;
-  } 
-input[type="password"] + label{
-    position: absolute;
-    left: 50px;
-    bottom: 0;
-    height: 40px;
-    line-height: 40px;
-    color: #1d005a;
-    border-radius: 3px 0 0 3px;
-    padding: 0 20px;
-    transform: translateZ(0) translateX(0);
-    transition: all 0.3s ease-in;
-    transition-delay: 0.2s;
-}
-input[type="password"]:focus + label{
-    transform: translateY(-100%)     translateX(0%);
-    border-radius: 3px;
-    color: aliceblue;
-    transition: all 0.1s ease-out;
-}
-input[type="password"]:focus{
-    padding: 10px;
-    transition: all 0.3s ease-out;
-    transition-delay: 0.2s;
-}
-
-
-/* 
 .inputs input{
     height: 50px;
     width: 75vw;
@@ -131,35 +43,47 @@ input[type="password"]:focus{
     color: white;
     padding-left: 15px;
     outline: none;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
 }
-.inputs input + label{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    height: 50px;
-    line-height: 40px;
-    color: white;
-    border-radius: 3px 0 0 3px;
-    padding: 0 20px;
-    background: #8220ef;
-    transform: translateZ(0) translateX(0);
-    transition: all 0.3s ease-in;
-    transition-delay: 0.2s;
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
-input[type="text"]:focus + label{
-    transform: translateY(-100%) translateX(0%);
-    border-radius: 3px;
-    transition: all 0.1s ease-out;
-  }
+.inputs h2{
+    color: #d3b3f8;
+    margin: 0 0 10px 20px;
+}
 .inputs input:focus{
-    box-shadow: 0 0 15px  #000000,
-                inset 0 0 10px  #000000;
-    font-size: medium;            
-    transition:all 100ms;
-    
+    box-shadow: 0 0 15px  #3b3b3b,
+                inset 0 0 10px  #5c5c5c;
 }
-.inputs input::placeholder{
-    color: #dec8f8;
-    padding-left: 20px;
-} */
+
+.add{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.add a{
+    color: #b97ffc;
+    text-decoration: none;
+}
+.add button{
+    color: white;
+    margin-top: 20px;
+    height: 60px;
+    width: 150px;
+    background-color: #c500ff;
+    border-radius: 15px 30px 15px 30px;
+}
+.add button:hover{
+    scale: 105%;
+    box-shadow: 0 0 25px black;
+    cursor: pointer;
+    transition: all 100ms;
+}
