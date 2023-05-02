@@ -3,7 +3,29 @@
     margin: 0;
     padding: 0;
 }
-
+header{
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+header .content{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    position: relative;
+    max-height: 50px;
+    align-items: center;
+}
+header .content svg{
+    top: 0px;
+    height: 5vh;
+    width: 10vw;
+    background-color: #9f4ff4;
+    border-radius: 5px;
+}
 body{
     height: 100vh;
     width: 100vw;
@@ -30,7 +52,7 @@ body{
     justify-content: center ;
     flex-direction: column;
     align-items: center;
-    top: 200px;
+    top: 170px;
 }
 .inputs input{
     height: 50px;
