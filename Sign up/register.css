@@ -102,12 +102,16 @@ main{
 
 /* TODO: alinhar inputs */
 .container-password{
-    height: 80px;
+    max-height: 50px;
     display: flex;
 }
+
 .container-password section{
+    align-self: center;
     position: absolute;
-    right: 0px;
+    right: 5px;
+    display: flex;
+    align-items: center;
 }
 
 

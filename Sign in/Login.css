@@ -54,7 +54,7 @@ body{
     align-items: center;
     top: 170px;
 }
-.inputs input{
+.inputs .text-input{
     height: 50px;
     width: 75vw;
     border-radius: 15px;
@@ -81,6 +81,20 @@ body{
 .inputs input:focus{
     box-shadow: 0 0 15px  #3b3b3b,
                 inset 0 0 10px  #5c5c5c;
+}
+
+.container-password{
+    max-height: 50px;
+    max-width: 75vw;
+    display: flex;
+}
+
+.container-password section{
+    align-self: center;
+    position: absolute;
+    right: 15vw;
+    display: flex;
+    align-items: center;
 }
 
 .add{

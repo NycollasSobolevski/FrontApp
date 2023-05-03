@@ -50,19 +50,25 @@
                 <h3>Email </h3>
                 <input type="email" class="text-input" name="email" id="email" placeholder="username@domain.com" required>
             </div>
-            <!-- TODO: Alinhar inputs -->
             <div class="password">
                 <h3>Password</h3>
                 <div class="container-password">
-                    <input type="password" class="text-input" name="password" minlength="8" id="password" placeholder="Password" onchange="validatePassword()" required>
+                    <input type="password" class="text-input" name="password" minlength="8" 
+                        id="password" placeholder="Password" onchange="validatePassword()" required>
                     <section>
-                        <input type="checkbox" class="checkbox-passwordview" name="passwordView" class="checkbox-passwordview" id="passwordView" onclick="viewPassword('password')">
+                        <input type="checkbox" class="checkbox-passwordview" name="passwordView" class="checkbox-passwordview"
+                             id="passwordView" onclick="viewPassword('password')">
                     </section>
                 </div>
             </div>
             <div class="password">
                 <h3>Password</h3>
-                <input type="password" class="text-input" name="repassword" minlength="8" id="repassword" placeholder="Verify Password" onchange="validatePassword()" required>
+                <div class="container-password">
+                    <input type="password" class="text-input" name="repassword" minlength="8" id="repassword" placeholder="Verify Password" onchange="validatePassword()" required>
+                    <section>
+                        <input type="checkbox" class="checkbox-passwordview" name="passwordView" class="checkbox-passwordview" id="passwordView" onclick="viewPassword('repassword')">
+                    </section>
+                </div>
             </div>
             <div id="password-alert">
                 <h2>Passwords don't match</h2>
