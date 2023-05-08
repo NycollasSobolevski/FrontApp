@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+header{
+    height: 75px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(100, 100, 100, 50%);
+}
+header .container{
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
